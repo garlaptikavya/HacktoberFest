@@ -1,0 +1,17 @@
+def batonPass(friends, time):
+    n=friends
+    t=time
+    if n<t:
+        d=t/n
+        l=t%n
+        if d%2==0:
+            li=[n-l+1, n-l]
+            return li
+        else:
+            li=[n-l, n-l-1]
+            return li
+    else:
+        li=[t,t+1]
+        return li
+
+print(batonPass(3,6))
