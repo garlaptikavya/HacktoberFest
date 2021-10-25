@@ -13,4 +13,4 @@ for i in range(len(l)):
             c=c+1
     if c==k:
         t=t+1
-print(t
+print(t)
