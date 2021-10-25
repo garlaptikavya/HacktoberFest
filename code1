@@ -1,0 +1,16 @@
+n=int(input())
+k=int(input())
+s=input()
+t=0
+l=[s[i:j] for i in range(n) for j in range(i+1,n+1)]
+print(l)
+for i in range(len(l)):
+    l1=list(l[i])
+    #print(l1)
+    c=0
+    for j in range(len(l1)):
+        if l1[j]=="1":
+            c=c+1
+    if c==k:
+        t=t+1
+print(t
